@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Log In</title>
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <h1 class="header">Log In</h1>
+    <div class="input">
+      <label for="em">Username</label>
+      <input type="email" id="em" class="em" required placeholder="Enter your email">
+    </div>
+    <br>
+    <div class="input">
+      <label for="pass">Password</label>
+      <input type="password" id="pass" class="em" required placeholder="Enter your password">
+    </div>
+    <br>
+    <button class="btn" onclick="window.location.href='land/index.html'">Log in</button>
+    <p id="loginMessage" style="color: red;"></p>
+    <p>Don't have an account? <a href="#" onclick="toggleSignup(event)">Sign Up</a></p>
+  </div>
+
+  <div class="container" id="signupContainer" style="display: none;">
+    <h1 class="header">Sign Up</h1>
+    <div class="input">
+      <label for="newEm">Email</label>
+      <input type="email" id="newEm" required placeholder="Enter your email">
+    </div>
+    <br>
+    <div class="input">
+      <label for="newPass">Password</label>
+      <input type="password" id="newPass" required placeholder="Enter your password">
+    </div>
+    <br>
+    <button class="btn" onclick="handleSignup()">Sign Up</button>
+    <p id="signupMessage" style="color: red;"></p>
+    <p>Already have an account? <a href="#" onclick="toggleLogin(event)">Log In</a></p>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body{
+  height:100vh;
+  background-image:url("gal.jpg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  backdrop-filter:blur(0px);
+  color:white;
+  font-family:monospace;
+  margin:0px;
+}
+
+h1{
+  text-align:center;
+  
+}
+
+.navbar{
+  list-style-type:none;
+  background-color:rgba(255,255,255,0.1);
+  backdrop-filter:blur(5px);
+  border:white;
+  padding:0px;
+  color:white;
+  text-align:center;
+  overflow:hidden;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  padding:17px;
+  display:block;
+  transition:0.3s;
+}
+
+.navbar li{
+  float:left;
+}
+
+.btn{
+  margin-top:6px;
+  margin-left:10px;
+  height:20%;
+  width:17%;
+  background-color:transparent;
+  border-radius:7px;
+  color:white;
+  border:solid 1px;
+  border-color:rgba(255,255,255,0.2);
+  float:right;
+  padding: 10px;
+  transition:0.3s;
+}
+
+.btn:active{
+  background-color:black;
+  color:white;
+}
+
+.navbar a:hover{
+  background-color:black;
+  color:white;
+}
+
+.head{
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  paddng:25px;
+}
+
+p{
+  margin:40px;
+}
